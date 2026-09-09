@@ -29,10 +29,6 @@ El script simula la interacción completa de un usuario en la plataforma educati
 
 ---
 
-## Estructura del Proyecto
-
----
-
 ## Requisitos Previos
 
 - **Python 3.8+** instalado en el sistema.
