@@ -1,0 +1,198 @@
+{
+  "fecha_inicio": "2026-10-05T09:35:57.903584",
+  "fecha_fin": "2026-10-05T09:36:23.812925",
+  "duracion_segundos": 25.91,
+  "estado_general": "COMPLETADO",
+  "plataforma_url": "https://mantistcy.cl/aprenderpython/",
+  "modo_ejecucion": "headless (servidor Linux TTY)",
+  "cobertura": {
+    "total_modulos": 20,
+    "modulos_exitosos": 20,
+    "modulos_fallidos": 0,
+    "porcentaje_cobertura": 100.0
+  },
+  "detalle_modulos": [
+    {
+      "modulo_id": "sentencia-que-es-python",
+      "slug": "que-es-python",
+      "nombre": "¿Qué es Python?",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.6,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-variables-print",
+      "slug": "variables-print",
+      "nombre": "Variables y Comando Print",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.54,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-ideacion-importancia",
+      "slug": "ideacion-importancia",
+      "nombre": "Ideación e Importancia",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.54,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-entrada-salida",
+      "slug": "entrada-salida",
+      "nombre": "Entrada y Salida de Datos",
+      "input_data": "Estudiante Python",
+      "estado": "exitoso",
+      "duracion_segundos": 0.6,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-importancia-indentacion",
+      "slug": "importancia-indentacion",
+      "nombre": "Importancia de la Indentación",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.54,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-if-elif-else-avanzado",
+      "slug": "if-elif-else-avanzado",
+      "nombre": "Estructuras if / elif / else",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.54,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-try-except",
+      "slug": "try-except",
+      "nombre": "Gestión de Errores (try / except)",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.54,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-while-loop-basico",
+      "slug": "while-loop-basico",
+      "nombre": "While: Fundamentos y Contadores",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.54,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-while-loop-condicional",
+      "slug": "while-loop-condicional",
+      "nombre": "While: Control por Banderas",
+      "input_data": "25",
+      "estado": "exitoso",
+      "duracion_segundos": 0.56,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-for-loop-listas",
+      "slug": "for-loop-listas",
+      "nombre": "For: Recorrido de Colecciones",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.7,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-for-range-completo",
+      "slug": "for-range-completo",
+      "nombre": "For con Range: Rangos Avanzados",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.54,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-while-true-avanzado",
+      "slug": "while-true-avanzado",
+      "nombre": "While True: Menús Interactivos",
+      "input_data": "4",
+      "estado": "exitoso",
+      "duracion_segundos": 0.55,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-control-break-continue",
+      "slug": "control-break-continue",
+      "nombre": "Modificadores Break y Continue",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.54,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-bucles-anidados",
+      "slug": "bucles-anidados",
+      "nombre": "Bucles Anidados (Complejidad)",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.54,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-arreglos",
+      "slug": "arreglos",
+      "nombre": "Arreglos y Listas",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.53,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-listas-crud",
+      "slug": "listas-crud",
+      "nombre": "CRUD en Listas Dinámicas",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.55,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-listas-procesos-comunes",
+      "slug": "listas-procesos-comunes",
+      "nombre": "Operaciones y Métodos Comunes",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.53,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-manejo-archivos",
+      "slug": "manejo-archivos",
+      "nombre": "Archivos TXT y CSV",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.54,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-funciones-python",
+      "slug": "funciones-python",
+      "nombre": "Modularidad con Funciones",
+      "input_data": "",
+      "estado": "exitoso",
+      "duracion_segundos": 0.54,
+      "error": null
+    },
+    {
+      "modulo_id": "sentencia-1",
+      "slug": "1",
+      "nombre": "Ensayo Aplicado",
+      "input_data": "6",
+      "estado": "exitoso",
+      "duracion_segundos": 0.55,
+      "error": null
+    }
+  ],
+  "archivo_log": null,
+  "error": null
+}
