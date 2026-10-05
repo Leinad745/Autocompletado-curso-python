@@ -36,7 +36,7 @@ modulos_curso = [
 ]
 
 
-def ejecutar_bot_curso(url="https://mantistcy.cl/aprenderpython/", guardar_archivo_log=True):
+def ejecutar_bot_curso(url="https://mantistcy.cl/aprenderpython/"):
     inicio_ejecucion = datetime.now()
     t_inicio = time.time()
     total_modulos = len(modulos_curso)
@@ -55,7 +55,6 @@ def ejecutar_bot_curso(url="https://mantistcy.cl/aprenderpython/", guardar_archi
             "porcentaje_cobertura": 0.0
         },
         "detalle_modulos": [],
-        "archivo_log": None,
         "error": None
     }
 
@@ -169,21 +168,6 @@ def ejecutar_bot_curso(url="https://mantistcy.cl/aprenderpython/", guardar_archi
                 driver.quit()
             except Exception:
                 pass
-
-        # Guardar archivo de log en disco
-        if guardar_archivo_log:
-            try:
-                dir_actual = os.path.dirname(os.path.abspath(__file__))
-                dir_logs = os.path.join(dir_actual, "logs")
-                os.makedirs(dir_logs, exist_ok=True)
-                nombre_archivo = f"log_ejecucion_{inicio_ejecucion.strftime('%Y%m%d_%H%M%S')}.json"
-                ruta_completa = os.path.join(dir_logs, nombre_archivo)
-                with open(ruta_completa, "w", encoding="utf-8") as f:
-                    json.dump(log_ejecucion, f, indent=2, ensure_ascii=False)
-                log_ejecucion["archivo_log"] = ruta_completa
-            except Exception as e_log:
-                log_ejecucion["error_guardado_log"] = str(e_log)
-
     return log_ejecucion
 
 

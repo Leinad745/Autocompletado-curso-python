@@ -28,7 +28,7 @@ El script [botCurso.py](file:///home/sub4k3m1/Estudios/Universidad/6to-semestre/
 4. **Entrada de Datos (STDIN)**: Detecta ejercicios interactivos que requieren entrada de usuario, limpia el campo e ingresa los valores prefijados.
 5. **Compilación y Ejecución**: Dispara la ejecución del snippet de código del módulo mediante un clic JavaScript.
 6. **Sincronización por Espera Explícita**: Aguarda a que el elemento de consola (`console-{slug}`) aparezca en pantalla confirmando la respuesta del servidor antes de avanzar.
-7. **Monitoreo y Métricas de Cobertura**: Calcula tiempos individuales, tasa de éxito y porcentaje de cobertura global, exportando los resultados en formato JSON y guardando una copia en la carpeta `logs/`.
+7. **Monitoreo y Métricas de Cobertura**: Calcula tiempos individuales, tasa de éxito y porcentaje de cobertura global, retornando los resultados limpios en formato JSON a través de `stdout` para su ingesta y registro por **n8n**.
 
 ---
 
@@ -37,7 +37,7 @@ El script [botCurso.py](file:///home/sub4k3m1/Estudios/Universidad/6to-semestre/
 El script está adaptado a la arquitectura de [botCursoHeadless.py](file:///home/sub4k3m1/Estudios/Universidad/6to-semestre/AutomatizacionDeProcesosRoboticos/CasoSemestral/codigoCursoPython/botCursoHeadless.py):
 - **Opciones de Firefox**: Sin entorno gráfico (`-headless`), deshabilitando GPU y con `--no-sandbox`.
 - **Compatibilidad de Geckodriver**: Soporta rutas de servidor Linux (`/usr/local/bin/geckodriver`) con fallback automático a la ruta del sistema (`/usr/bin/geckodriver` o variable `PATH`).
-- **Salida estándar limpia**: Retorna un objeto JSON por `stdout`, facilitando su integración directa en herramientas de automatización como **n8n**, cronjobs o pipelines CI/CD.
+- **Salida estándar limpia**: Retorna un objeto JSON por `stdout` sin crear carpetas ni archivos locales, facilitando que **n8n** gestione directamente la persistencia de los logs.
 
 ---
 
@@ -45,9 +45,8 @@ El script está adaptado a la arquitectura de [botCursoHeadless.py](file:///home
 
 ```text
 codigoCursoPython/
-├── botCurso.py            # Script principal adaptado (Headless + Logs + Cobertura)
+├── botCurso.py            # Script principal adaptado (Headless + Logs JSON + Cobertura)
 ├── botCursoHeadless.py    # Script de referencia para servidor TTY
-├── logs/                  # Registro histórico de ejecuciones en formato JSON
 └── README.md              # Documentación técnica
 ```
 
@@ -117,7 +116,6 @@ Al finalizar, el bot retorna un objeto JSON estructurado:
       "error": null
     }
   ],
-  "archivo_log": ".../logs/log_ejecucion_20261005_092857.json",
   "error": null
 }
 ```
